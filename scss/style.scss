@@ -1,0 +1,162 @@
+//============================
+//  変数
+//============================
+$color_bg: #b5d5f5; // 背景
+$color_text: #333333; // 文字
+$color_message: #ee3939; // メッセージ
+$color_stage-number: #e54a12; // ステージ番号
+$color_button: #009944; // ボタン
+$color_button-shadow: #00662d; // ボタンの影
+$color_border: #707070; // ボックスの線
+
+
+//============================
+//	スタイル
+//============================
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: $color_bg;
+  color: $color_text;
+}
+
+
+/* タイトル */
+.title {
+  font-size: 24px;
+  text-align: center;
+  padding: 10px 0 6px;
+}
+
+
+/* リード文 */
+.lead {
+  font-size: 14px;
+  text-align: center;
+}
+
+
+/* ステージ番号 */
+.stage-number {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: $color_stage-number;
+  margin-top: 10px;
+  display: none;
+}
+.stage-number.display-block {
+  display: block;
+}
+
+
+/* ボタン */
+.button {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: $color_button;
+  box-shadow: 0 5px 0 $color_button-shadow;
+  margin: 0 auto;
+  position: relative;
+  z-index: 20;
+  display: none;
+
+  &:hover {
+    opacity: .7;
+    transition: opacity .3s;
+  }
+
+  &:active {
+    box-shadow: 0 1px 0 $color_button-shadow;
+    margin-top: 4px;
+  }
+}
+.button.display-block {
+  display: block;
+}
+
+
+/* メッセージ */
+.message {
+  text-align: center;
+  color: $color_message;
+  font-weight: bold;
+  font-size: 24px;
+  display: none;
+  padding: 8px;
+}
+.message.display-block {
+  display: block;
+}
+
+
+/* ステージ */
+.stage {
+  max-width: 270px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.stage.display-none {
+  display: none;
+}
+
+
+/* 各ボックス */
+.box {
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+
+/* 使用するボックス */
+.number-box {
+  font-size: 60px;
+  text-align: center;
+  line-height: 70px;
+  background-color: #fff;
+  border: 2px solid $color_border;
+  border-radius: 5px;
+  color: transparent;
+  user-select: none;
+  display: none;
+  position: relative;
+}
+.number-box.display-block {
+  display: block;
+}
+.number-box.show {
+  color: $color_text;
+}
+
+
+/* フィルター */
+#filter {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -10;
+}
+
+#filter.on {
+  z-index: 10;
+}

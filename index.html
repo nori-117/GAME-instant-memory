@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1.0">
+    <title>瞬間記憶ゲーム</title>
+    <meta name="description" content="一瞬表示される数字を正確に覚えられるか、チャレンジ！">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <main>
+
+      <h1 class="title">瞬間記憶ゲーム</h1>
+      <p class="lead">表示される数字を覚えて<br>1から順番にタップしてね!!</p>
+
+      <p id="stage-number" class="stage-number"></p>
+ 
+      <div class="stage1 stage">
+        <div class="box none"></div>
+        <div class="box none"></div>
+        <div class="box none"></div>
+        <div class="box number-box"></div>
+        <div class="box number-box"></div>
+        <div class="box number-box"></div>
+        <div class="box none"></div>
+        <div class="box none"></div>
+        <div class="box none"></div>
+      </div>
+
+      <div class="stage2 stage display-none">
+        <div class="box number-box"></div>
+        <div class="box none"></div>
+        <div class="box number-box"></div>
+        <div class="box none"></div>
+        <div class="box none"></div>
+        <div class="box none"></div>
+        <div class="box number-box"></div>
+        <div class="box none"></div>
+        <div class="box number-box"></div>
+      </div>
+
+      <div class="stage3 stage display-none">
+        <div class="box none"></div>
+        <div class="box number-box"></div>
+        <div class="box none"></div>
+        <div class="box number-box"></div>
+        <div class="box none"></div>
+        <div class="box number-box"></div>
+        <div class="box none"></div>
+        <div class="box number-box"></div>
+        <div class="box none"></div>
+      </div>
+
+      <div class="stage4 stage display-none">
+        <div class="box number-box"></div>
+        <div class="box none"></div>
+        <div class="box number-box"></div>
+        <div class="box none"></div>
+        <div class="box number-box"></div>
+        <div class="box none"></div>
+        <div class="box number-box"></div>
+        <div class="box none"></div>
+        <div class="box number-box"></div>
+      </div>
+
+      <div class="stage5 stage display-none">
+        <div class="box none"></div>
+        <div class="box number-box"></div>
+        <div class="box none"></div>
+        <div class="box number-box"></div>
+        <div class="box number-box"></div>
+        <div class="box number-box"></div>
+        <div class="box none"></div>
+        <div class="box number-box"></div>
+        <div class="box none"></div>
+      </div>
+
+      <div class="stage6 stage display-none">
+        <div class="box number-box"></div>
+        <div class="box none"></div>
+        <div class="box number-box"></div>
+        <div class="box number-box"></div>
+        <div class="box none"></div>
+        <div class="box number-box"></div>
+        <div class="box number-box"></div>
+        <div class="box none"></div>
+        <div class="box number-box"></div>
+      </div>
+
+      <div class="stage7 stage display-none">
+        <div class="box none"></div>
+        <div class="box none"></div>
+        <div class="box number-box"></div>
+        <div class="box none"></div>
+        <div class="box number-box"></div>
+        <div class="box number-box"></div>
+        <div class="box number-box"></div>
+        <div class="box number-box"></div>
+        <div class="box number-box"></div>
+      </div>
+
+      <div class="stage8 stage display-none">
+        <div class="box number-box"></div>
+        <div class="box none"></div>
+        <div class="box number-box"></div>
+        <div class="box number-box"></div>
+        <div class="box number-box"></div>
+        <div class="box number-box"></div>
+        <div class="box number-box"></div>
+        <div class="box none"></div>
+        <div class="box number-box"></div>
+      </div>
+
+      <div class="stage9 stage display-none">
+        <div class="box number-box"></div>
+        <div class="box number-box"></div>
+        <div class="box number-box"></div>
+        <div class="box number-box"></div>
+        <div class="box none"></div>
+        <div class="box number-box"></div>
+        <div class="box number-box"></div>
+        <div class="box number-box"></div>
+        <div class="box number-box"></div>
+      </div>
+
+      <div class="stage10 stage display-none">
+        <div class="box number-box"></div>
+        <div class="box number-box"></div>
+        <div class="box number-box"></div>
+        <div class="box number-box"></div>
+        <div class="box number-box"></div>
+        <div class="box number-box"></div>
+        <div class="box number-box"></div>
+        <div class="box number-box"></div>
+        <div class="box number-box"></div>
+      </div>
+
+
+      <p id="message" class="message">ゲームオーバー</p>
+
+      <button id="button" class="button display-block">スタート</button>
+
+      <div id="filter"></div>
+
+    </main>
+
+
+
+  
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
+
+
+
+
